@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Price Book Entries</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+  <body class="container">
+    <h1>Product Price Record</h1>
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-sm">
+            <h3>
+              Blue Diamond Almond Milk
+            </h3>
+            <p>34 oz carton</p>
+          </div>
+
+        <div class="row">
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="purchase-date">Date of Purchase</label>
+              <input type="date" class="form-control" id="purchase-date">
+            </div>
+          </div>
+  
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="store-name">Store Name</label>
+              <input type="text" class="form-control" id="store-name" placeholder="Store Name">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="sale">Was this product on sale?</label>
+              <input type="text" class="form-control" id="sale" placeholder="On sale?">
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="coupon">Did you use a coupon?</label>
+              <input type="text" class="form-control" id="coupon" placeholder="Coupon?">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="price-paid">Price Paid</label>
+              <input type="text" class="form-control" id="price-paid" placeholder="Price Paid">
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="full-price">Full Price</label>
+              <input type="text" class="form-control" id="full-price" placeholder="Full Price">
+            </div>
+          </div>
+        </div>
+
+        <div class="p-3">
+          <button id="add" class="btn btn-primary form-control">Create</button>
+        </div>
+      </div>  
+    </div> <!-- end card -->
+  <table id="list" class="table table-light table-striped">
+    <tr>
+      <th>Date</th>
+      <th>Store</th>
+      <th>Sale?</th>
+      <th>Coupon?</th>
+      <th>Price Paid</th>
+      <th>Full Price</th>
+    </tr>
+  </table>
+     
+  <script src="index.js"></script>
+    <!-- <script src="node_modules/jquery/dist/jquery.js"></script> -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+  </html>
